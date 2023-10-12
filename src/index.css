@@ -1,0 +1,63 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700&family=Pacifico&family=Source+Sans+3:wght@300;400;600;700;900&display=swap');
+
+/* media query */
+@media screen and (max-width: 768px) {
+
+  /* About */
+  .about .makePizza {
+    display: none;
+  }
+
+  /* Contact */
+  .contact .contactImg {
+    position: relative;
+    z-index: -1;
+    flex-basis: 100%;
+    opacity: .4;
+  }
+
+  .contact .contactDiv {
+    font-size: 25px;
+    position: absolute;
+    min-width: 100%;
+  }
+
+  .contact .contactDiv h1 {
+    font-size: 45px;
+  }
+}
+
+/* select & scrollbar */
+::selection {
+  background: #212121;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  background: #ef6c00
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: #212121;
+}
+
+/* am & pm */
+.App .b {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+}
+
+.am {
+  background-color: transparent;
+}
+
+.pm {
+  background-color: #af8448;
+  color: white;
+}
