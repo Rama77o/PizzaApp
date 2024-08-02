@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/PizzaApp/static/css/main.0c70d9d2.css",
+    "main.js": "/PizzaApp/static/js/main.cf79e947.js",
+    "static/js/787.d3befce1.chunk.js": "/PizzaApp/static/js/787.d3befce1.chunk.js",
+    "static/media/pizzaLeft.jpg": "/PizzaApp/static/media/pizzaLeft.24b07891fef1c8dae848.jpg",
+    "static/media/vegan.jpg": "/PizzaApp/static/media/vegan.52cbfe9e6f8d75e18f8b.jpg",
+    "static/media/pizza.jpeg": "/PizzaApp/static/media/pizza.21a1098fa87e28d80f37.jpeg",
+    "static/media/multiplePizzas.jpeg": "/PizzaApp/static/media/multiplePizzas.490709e2113d96ca24a1.jpeg",
+    "static/media/pizzaLogo.png": "/PizzaApp/static/media/pizzaLogo.fcdc67e6b331cba63735.png",
+    "static/media/expensive.jpg": "/PizzaApp/static/media/expensive.6449ceefce083d18dfef.jpg",
+    "static/media/pepperoni.jpg": "/PizzaApp/static/media/pepperoni.d173e5db8dacdf1324ed.jpg",
+    "static/media/makingpizza.jpeg": "/PizzaApp/static/media/makingpizza.40dc048984f28babc069.jpeg",
+    "static/media/pineapple.jpg": "/PizzaApp/static/media/pineapple.a01ab9be389f0e6bd6ec.jpg",
+    "static/media/margherita.jpg": "/PizzaApp/static/media/margherita.683bc9bb07f9ff0d82df.jpg",
+    "static/media/pedrotechspecial.jpg": "/PizzaApp/static/media/pedrotechspecial.425951cb0e484775fd4c.jpg",
+    "index.html": "/PizzaApp/index.html",
+    "main.0c70d9d2.css.map": "/PizzaApp/static/css/main.0c70d9d2.css.map",
+    "main.cf79e947.js.map": "/PizzaApp/static/js/main.cf79e947.js.map",
+    "787.d3befce1.chunk.js.map": "/PizzaApp/static/js/787.d3befce1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c70d9d2.css",
+    "static/js/main.cf79e947.js"
+  ]
+}
