@@ -1,0 +1,178 @@
+/* colors and styles default */
+:root {
+    --PrimaryColor: rgb(82, 142, 37);
+    --HoverColor: #bdf094;
+    --PaleGreen: rgb(223, 248, 206);
+    --WhiteColor: rgb(255, 255, 255);
+    --BlackColor: rgb(46, 46, 46);
+    --TextColor: rgb(121, 121, 124);
+    --bgColor: rgb(238, 239, 241);
+    --GreyText: rgb(190, 190, 190);
+    --InputColor: rgb(248, 246, 247);
+    --itemCardColor: rgb(223, 226, 223);
+    --itemCardHover: #d1ff9f;
+
+    /* font ang typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+/* secContainer */
+.listingSection {
+    flex-basis: 70%;
+}
+
+.listingSection .heading {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.listingSection .heading h1 {
+    font-size: var(--h1FontSize);
+    font-weight: 700;
+    color: var(--BlackColor);
+}
+
+.listingSection .heading .btn {
+    border: 1px solid var(--TextColor);
+}
+
+.listingSection .heading .btn:hover {
+    border: 1px solid var(--PrimaryColor);
+}
+
+.listingSection .secContainer {
+    margin: 1rem 0;
+    gap: 1rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.listingSection .secContainer .singleItem {
+    position: relative;
+    width: 150px;
+    height: 170px;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--itemCardColor);
+}
+
+.listingSection .secContainer .singleItem:hover {
+    background-color: var(--itemCardHover);
+    box-shadow: 0 2px 2px var(--GreyText);
+}
+
+.listingSection .secContainer .singleItem .icon {
+    color: var(--PrimaryColor);
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+.listingSection .secContainer .singleItem img {
+    max-width: 100px;
+    height: 100px;
+}
+
+.listingSection .secContainer .singleItem h3 {
+    font-size: var(--h3FontSize);
+    color: var(--BlackColor);
+    padding: 1rem 0;
+}
+
+/* sallers */
+
+.sallers {
+    width: 100%;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.sallers .heading {
+    padding: 1.5rem 0;
+}
+
+.sallers .heading .btn {
+    padding: .5rem 1rem;
+}
+
+.sallers .topSallers,
+.sallers .featuredSallers {
+    flex-basis: 50%;
+}
+
+.sallers .card {
+    background-color: var(--WhiteColor);
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 4px var(--InputColor);
+    gap: 1rem;
+}
+
+.sallers .users {
+    padding-right: 1rem;
+    border-right: 2px solid var(--GreyText);
+}
+
+.sallers img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: .3s ease;
+    object-fit: cover;
+    border: 2px solid var(--InputColor);
+}
+
+.sallers img:hover {
+    transform: translateY(-10px);
+}
+
+.sallers .cardText span {
+    color: var(--BlackColor);
+    font-weight: 500;
+}
+
+.sallers .cardText small {
+    font-weight: 400;
+}
+
+.sallers .cardText .data {
+    margin-left: 1rem;
+}
+
+/* media query */
+@media screen and (max-width: 990px) {
+    .sallers .card {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 918px) {
+    .listingSection .secContainer .singleItem {
+        width: 200px;
+    }
+
+    .listingSection .secContainer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .sallers {
+        flex-direction: column;
+    }
+
+    .sallers .card {
+        flex-direction: row;
+    } 
+}

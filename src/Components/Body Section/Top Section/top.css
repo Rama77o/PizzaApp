@@ -1,0 +1,403 @@
+/* colors and styles default */
+:root {
+    --PrimaryColor: rgb(82, 142, 37);
+    --HoverColor: #bdf094;
+    --PaleGreen: rgb(223, 248, 206);
+    --WhiteColor: rgb(255, 255, 255);
+    --BlackColor: rgb(46, 46, 46);
+    --TextColor: rgb(121, 121, 124);
+    --bgColor: rgb(238, 239, 241);
+    --GreyText: rgb(190, 190, 190);
+    --InputColor: rgb(248, 246, 247);
+
+    /* font ang typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+}
+
+/* headerSection */
+
+.topSection .headerSection {
+    justify-content: space-between;
+}
+
+.topSection .headerSection h1 {
+    color: var(--BlackColor);
+    font-size: var(--h1FontSize);
+    font-weight: 700;
+}
+
+.topSection .headerSection p {
+    color: var(--TextColor);
+    font-size: var(--normalFontSize);
+    font-weight: 500;
+}
+
+.topSection .headerSection .searchbar {
+    background-color: var(--WhiteColor);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    gap: 1rem;
+    box-shadow: 0 2px 4px var(--InputColor);
+}
+
+.topSection .headerSection input {
+    border: none;
+    outline: none;
+    background-color: none;
+}
+
+.topSection .headerSection .searchbar .icon {
+    color: var(--TextColor);
+}
+
+.topSection .headerSection .searchbar .icon:hover {
+    color: var(--PrimaryColor);
+}
+
+.topSection .headerSection .adminDiv {
+    gap: 1rem;
+}
+
+.topSection .headerSection .adminDiv .icon {
+    font-size: var(--biggestFontSize);
+    background-color: var(--WhiteColor);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--InputColor);
+    color: var(--TextColor);
+}
+
+.topSection .headerSection .adminImg {
+    width: 2.5rem;
+    display: flex;
+    border: 3px solid var(--WhiteColor);
+    box-shadow: 0 2px 4px var(--InputColor);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.topSection .headerSection img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* cardSection */
+/* rightCard */
+
+.topSection .cardSection {
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.topSection .cardSection .rightCard {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+    flex-basis: 70%;
+    padding: 2rem;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.topSection .rightCard .videoDiv {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.topSection .rightCard video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.topSection .rightCard h1,
+.topSection .rightCard p,
+.topSection .rightCard .btn {
+    z-index: 100;
+}
+
+.topSection .rightCard h1 {
+    font-size: var(--h1FontSize);
+    font-weight: 800;
+    color: var(--WhiteColor);
+}
+
+.topSection .rightCard p {
+    font-weight: 500;
+    color: var(--PaleGreen);
+    padding: 1rem;
+}
+
+.topSection .rightCard .buttons {
+    gap: 1rem;
+}
+
+.topSection .rightCard .btn {
+    box-shadow: none;
+    padding: .8rem 1.5rem;
+    color: var(--PrimaryColor);
+    border: 2px solid transparent;
+}
+
+.topSection .rightCard .transparent {
+    background-color: transparent;
+    border: 2px solid var(--PaleGreen);
+    color: var(--PaleGreen);
+}
+
+.topSection .rightCard .transparent:hover {
+    background-color: var(--PaleGreen);
+    color: var(--PrimaryColor);
+}
+
+/* leftCard */
+
+.topSection .cardSection .leftCard {
+    flex-basis: 50%;
+}
+
+.topSection .leftCard .main {
+    height: 200px;
+    position: relative;
+    border-radius: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.topSection .leftCard .main::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: var(--PaleGreen);
+    border-radius: 1rem;
+}
+
+.topSection .leftCard .textDiv {
+    z-index: 100;
+}
+
+.topSection .leftCard h1 {
+    font-size: var(--h1FontSize);
+    color: var(--BlackColor);
+    padding-bottom: 1rem;
+}
+
+.topSection .leftCard .stat {
+    gap: 1.5rem;
+    font-weight: 500;
+    color: var(--BlackColor);
+}
+
+.topSection .leftCard small {
+    color: var(--PrimaryColor);
+    display: block;
+    font-size: var(--normalFontSize);
+    font-weight: 500;
+    padding: .5rem 0;
+}
+
+.topSection .leftCard .link {
+    margin-top: 1rem;
+    /* justify-content: space-between; */
+    cursor: pointer;
+}
+
+.topSection .leftCard .link:hover {
+    color: var(--PrimaryColor);
+}
+
+
+.topSection .leftCard .link:hover .icon {
+    transform: translateX(10px);
+    transition: .3s ease;
+}
+
+.topSection .leftCard .imgDiv {
+    z-index: 100;
+    /* transform: translate(37px, -32px); */
+    transform: translateY(-20px);
+
+}
+
+.topSection .leftCard img {
+    width: 200px;
+}
+
+/* sidebarCard */
+
+.topSection .sidebarCard {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.topSection .sidebarCard .icon {
+    position: absolute;
+    top: -15px;
+    background-color: var(--HoverColor);
+    border: 10px solid var(--WhiteColor);
+    border-radius: 50%;
+    font-size: 3rem;
+    z-index: 100;
+    right: 47%;
+    transform: translate(50%);
+}
+
+.topSection .cardContent {
+    position: relative;
+    background-color: var(--HoverColor);
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.topSection h3 {
+    font-size: var(--h3FontSize);
+    padding: 1rem 0;
+    margin-top: 1rem;
+    font-weight: 800;
+    color: var(--BlackColor);
+}
+
+.topSection p {
+    font-size: var(--normalFontSize);
+    color: var(--TextColor);
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+.topSection .circle1,
+.topSection .circle2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--PaleGreen);
+    position: absolute;
+    opacity: .7;
+}
+
+.topSection .circle1 {
+    top: -17px;
+    left: -28px;
+}
+
+.topSection .circle2 {
+    bottom: -26px;
+    right: -28px;
+}
+
+.topSection .btn {
+    position: relative;
+    color: var(--TextColor);
+    z-index: 3000;
+}
+
+/* media query */
+
+@media screen and (max-width: 990px) {
+    .topSection .cardSection {
+        flex-direction: column;
+    }
+
+    .topSection .rightCard,
+    .topSection .leftCard {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .topSection .leftCard {
+        margin-top: 2rem;
+        align-self: flex-start;
+        height: 10px !important;
+    }
+
+    .topSection .sidebarCard {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 918px) {
+    .topSection .headerSection .searchbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .topSection .cardSection .leftCard .main {
+        width: 100%;
+    }
+
+    .topSection .sidebarCard {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 490px) {
+    .topSection .headerSection .adminDiv {
+        display: none;
+    }
+
+    .topSection .headerSection .title {
+        margin: auto;
+        text-align: center;
+    }
+
+    .topSection .cardSection .rightCard{
+        text-align: center;
+    }
+
+    .topSection .rightCard .buttons {
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .topSection .rightCard .btn {
+        width: 100%;
+    }
+
+    .topSection .leftCard .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .topSection .leftCard .main::before {
+        width: 100%;
+    }
+
+    .topSection .leftCard .imgDiv {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .topSection .cardSection .rightCard {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .topSection .rightCard h1 {
+        font-size: var(--h2FontSize);
+    }
+}

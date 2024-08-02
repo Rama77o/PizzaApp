@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;600;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: .3s ease;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/* colors and styles default */
+:root {
+ --PrimaryColor: rgb(82, 142, 37);
+ --HoverColor: #bdf094;
+ --PaleGreen: rgb(223, 248, 206);
+ --WhiteColor: rgb(255, 255, 255);
+ --BlackColor: rgb(46, 46, 46);
+ --TextColor: rgb(121, 121, 124);
+ --bgColor: rgb(238, 239, 241);
+ --GreyText: rgb(190, 190, 190);
+ --InputColor: rgb(248, 246, 247);
+
+ /* font ang typography */
+ --biggestFontSize: 2.5rem;
+ --h1FontSize: 1.5rem;
+ --h2FontSize: 1.25rem;
+ --h3FontSize: 1rem;
+ --normalFontSize: .938rem;
+ --smallFontSize: .813rem;
+ --smallestFontSize: .75rem;
+}
+
+/* default style */
+html {
+  font-size: 90%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.icon {
+  font-size: var(--h2FontSize);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: .8rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--InputColor);
+  color: var(--TextColor);
+}
+
+.btn .icon {
+  margin-left: .5rem;
+}
+
+.btn:hover {
+  background-color: var(--PaleGreen);
+  color: var(--PrimaryColor);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.container {
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgColor);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px var(--GreyText);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* media query */
+@media screen and (max-width: 990px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .heading {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+} 
